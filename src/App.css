@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.text-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sentiment-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sentiment-item {
+  background-color: #f2f2f2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sentiment-item:hover {
+  transform: translateY(-5px);
+}
+
+.sentiment-item.positive {
+  border-left: 5px solid #4CAF50;
+}
+
+.sentiment-item.neutral {
+  border-left: 5px solid #f4a300;
+}
+
+.sentiment-item.negative {
+  border-left: 5px solid #d9534f;
+}
+
+.sentiment-score,
+.sentiment-weight {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.sentiment-weight {
+  font-style: italic;
+  color: #777;
+}
+
+.chart-container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.sentiment-item.mixed {
+  border-left: 5px solid #6c757d;
+}
